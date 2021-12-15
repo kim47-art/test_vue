@@ -1,6 +1,8 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+     <!--{{}}二重かっこはいろいろできる。プロパティを直接書き込んだり()、javascriptを書いたり、三項演算子を書いたり、メソッド(呼び出し)を書いたり.
+    今回はmsgに入れた文字列をプロパティに書き込んでいる-->
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
       check out the
@@ -34,7 +36,7 @@
 export default {
   name: 'HelloWorld',
   props: {
-    msg: String
+    msg: String //msgを引数として受け取る。型はString
   }
 }
 </script>
