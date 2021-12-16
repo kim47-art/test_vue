@@ -15,80 +15,21 @@ export default {
   data: function() {
     return {
       chartOptions: {
-        dataLabels: {
-          enabled: false
-        },
+        dataLabels: {enabled: false},
         colors: ["#008FFB"],
-        xaxis: {
-          type: 'category',
-        },
-        title: {
-          text: 'HeatMap Chart (Single color)'
-        },
+        xaxis: {type: 'category',},
+        title: {text: 'HeatMap Chart (Single color)'},
       },
-      series: [{
-          name: 'Metric1',
-          data: this.generateData(20, {
-            min: 0,
-            max: 90
-          })
-        },
-        {
-          name: 'Metric2',
-          data: this.generateData(20, {
-            min: 0,
-            max: 90
-          })
-        },
-        {
-          name: 'Metric3',
-          data: this.generateData(20, {
-            min: 0,
-            max: 90
-          })
-        },
-        {
-          name: 'Metric4',
-          data: this.generateData(20, {
-            min: 0,
-            max: 90
-          })
-        },
-        {
-          name: 'Metric5',
-          data: this.generateData(20, {
-            min: 0,
-            max: 90
-          })
-        },
-        {
-          name: 'Metric6',
-          data: this.generateData(20, {
-            min: 0,
-            max: 90
-          })
-        },
-        {
-          name: 'Metric7',
-          data: this.generateData(20, {
-            min: 0,
-            max: 90
-          })
-        },
-        {
-          name: 'Metric8',
-          data: this.generateData(20, {
-            min: 0,
-            max: 90
-          })
-        },
-        {
-          name: 'Metric9',
-          data: this.generateData(20, {
-            min: 0,
-            max: 90
-          })
-        }
+      series: [
+        {name: 'Metric1',data: this.generateData(20, {min: 0,max: 90})},
+        {name: 'Metric2',data: this.generateData(20, {min: 0,max: 90})},
+        {name: 'Metric3',data: this.generateData(20, {min: 0,max: 90})},
+        {name: 'Metric4',data: this.generateData(20, {min: 0,max: 90})},
+        {name: 'Metric5',data: this.generateData(20, {min: 0,max: 90})},
+        {name: 'Metric6',data: this.generateData(20, {min: 0,max: 90})},
+        {name: 'Metric7',data: this.generateData(20, {min: 0,max: 90})},
+        {name: 'Metric8',data: this.generateData(20, {min: 0,max: 90})},
+        {name: 'Metric9',data: this.generateData(20, {min: 0,max: 90})}
       ],
     }
   },
