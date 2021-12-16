@@ -25,19 +25,20 @@ Vue.extend() によって拡張されたコンストラクタもエクスポー�
 また、すべてのコンポーネントのすべてのスタイルが単一のCSSファイルに抽出されるようにwebpackを設定することも出来ます -->
 
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/> <!-- HelloWorldコンポーネントのpropsで定義されているmsgに"Welcome to Your Vue.js App"を指定する-->
+  <!-- <HelloWorld msg="Welcome to Your Vue.js App"/>  -->
+  <!-- HelloWorldコンポーネントのpropsで定義されているmsgに"Welcome to Your Vue.js App"を指定する -->
   <HeatMap/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
 import HeatMap from './components/HeatMap.vue'
 // export default でメンバーを囲むことで、外部からも参照できるようにします。
 // 単一ファイルコンポーネントでは外部から参照されることが前提の仕組みになるので、基本的にscriptの部分は export default で囲むことが前提となります。
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    // HelloWorld,
     HeatMap
   }
 }
